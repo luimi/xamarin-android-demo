@@ -7,14 +7,16 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 
 namespace Xamarin_Android_Demo
 {
-    [Activity(Label = "GoogleMap")]
-    public class GoogleMapActivity : Activity
+    [Activity(Label = "GoogleMap", Theme = "@style/AppTheme")]
+    public class GoogleMapActivity : AppCompatActivity
     {
+        // https://docs.microsoft.com/en-us/xamarin/android/platform/maps-and-location/maps/maps-api
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

@@ -15,7 +15,8 @@ namespace Xamarin_Android_Demo
     {
         Module[] modules = new Module[] {
             new Module("REST",typeof(RESTActivity)),
-            new Module("Google Map",typeof(GoogleMapActivity))
+            new Module("Google Map",typeof(GoogleMapActivity)),
+            new Module("Tracker",typeof(TrackerActivity)),
         };
         protected override void OnCreate(Bundle savedInstanceState)
         {
