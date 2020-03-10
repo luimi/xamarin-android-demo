@@ -35,7 +35,7 @@ namespace Xamarin_Android_Demo
             getProgress = FindViewById<ProgressBar>(Resource.Id.pb_get_response);
             getList = FindViewById<ListView>(Resource.Id.lv_rest);
             adapter = new RestAdapter(this);
-            getList.SetAdapter(adapter);
+            getList.Adapter = adapter;
             get.Click += async delegate
             {
                 getProgress.Visibility = ViewStates.Visible;

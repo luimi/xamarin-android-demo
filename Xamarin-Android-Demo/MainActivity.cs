@@ -14,7 +14,8 @@ namespace Xamarin_Android_Demo
     public class MainActivity : AppCompatActivity
     {
         Module[] modules = new Module[] {
-            new Module("REST",typeof(RESTActivity))
+            new Module("REST",typeof(RESTActivity)),
+            new Module("Google Map",typeof(GoogleMapActivity))
         };
         protected override void OnCreate(Bundle savedInstanceState)
         {
