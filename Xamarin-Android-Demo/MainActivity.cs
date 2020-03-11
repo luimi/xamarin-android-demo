@@ -17,6 +17,7 @@ namespace Xamarin_Android_Demo
             new Module("REST",typeof(RESTActivity)),
             new Module("Google Map",typeof(GoogleMapActivity)),
             new Module("Tracker",typeof(TrackerActivity)),
+            new Module("WebSockets",typeof(WebsocketActivity)),
         };
         protected override void OnCreate(Bundle savedInstanceState)
         {
